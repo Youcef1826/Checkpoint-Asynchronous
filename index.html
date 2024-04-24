@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced filter products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Begin main section -->
+    <main class="container mx-auto my-12">
+
+        <section class="flex gap-10 p-4">
+
+            <!-- Begin filters section -->
+            <div id="filters" class="p-4">
+
+                <!-- Search bar-->
+                <div class="">
+                    <h4 class="font-medium mb-2">Search</h4>
+                    <input type="search" id="search-bar" placeholder="Search products / categories ..." class="border-[1px] border-slate-200 p-2 rounded-md outline-none mb-5">
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h4 class="font-medium mb-2">Categories</h4>
+                    <select id="category">
+                        <option value="">Choose an option</option>
+                    </select>
+
+                </div>
+            </div>
+            <!-- End filters section -->
+
+            <!-- Begin products list section -->
+            <div>
+                <div id="display-selected-categories" class="mb-3">
+
+                </div>
+
+                <div id="products-list" class="grid grid-cols-3 gap-5 mb-5">
+
+                </div>
+
+                <div id="pagination">
+                    
+                </div>
+            </div>
+
+            <!-- End products list section -->
+        </section>
+    </main>
+    <!-- End main section -->
+
+    <!-- JS files -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
